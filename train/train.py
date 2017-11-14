@@ -21,13 +21,13 @@ import libs.preprocessings.coco_v1 as coco_preprocess
 import libs.nets.pyramid_network as pyramid_network
 import libs.nets.resnet_v1 as resnet_v1
 
-from .train_utils import _configure_learning_rate, _configure_optimizer, \
+from train.train_utils import _configure_learning_rate, _configure_optimizer, \
   _get_variables_to_train, _get_init_fn, get_var_list_to_restore
 
 from PIL import Image, ImageFont, ImageDraw, ImageEnhance
-import libs.datasets.download_and_convert_coco
+from libs.datasets import download_and_convert_coco
 #from libs.datasets.download_and_convert_coco import _cat_id_to_cls_name
-from ...visualization.pil_utils import cat_id_to_cls_name, draw_img, draw_bbox
+from libs.visualization.pil_utils import cat_id_to_cls_name, draw_img, draw_bbox
 
 FLAGS = tf.app.flags.FLAGS
 resnet50 = resnet_v1.resnet_v1_50

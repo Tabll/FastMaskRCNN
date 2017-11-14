@@ -6,7 +6,8 @@ This repo attempts to reproduce this amazing work by Kaiming He et al. :
 
 ## Requirements
 
-- [Tensorflow (>= 1.0.0)](https://www.tensorflow.org/install/install_linux)
+- Windows 10, Python 3.6.3
+- [Tensorflow (>= 1.4.0)](https://www.tensorflow.org/install/install_linux)
 - [Numpy](https://github.com/numpy/numpy/blob/master/INSTALL.rst.txt)
 - [COCO dataset](http://mscoco.org/dataset/#download)
 - [Resnet50](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz)
